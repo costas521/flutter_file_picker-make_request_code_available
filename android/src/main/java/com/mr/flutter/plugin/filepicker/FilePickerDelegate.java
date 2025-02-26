@@ -48,6 +48,11 @@ public class FilePickerDelegate implements PluginRegistry.ActivityResultListener
 
     private byte[] bytes;
 
+    public static int getRequestCode() {
+        return REQUEST_CODE;
+    }
+
+
     public FilePickerDelegate(final Activity activity) {
         this(
                 activity,
